@@ -7,6 +7,6 @@ Calculador de divisas, podras calcular cualquier tipo de cryptomonedas desde Tu 
 
 ~$ git clone https://github.com/mauro199304/Calculator-Dogecoin/
 
-~$ cd Calculador-Dogecoin
+~$ cd Calculator-Dogecoin
 
 ~$ bash install.sh
