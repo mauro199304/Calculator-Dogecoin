@@ -65,7 +65,7 @@ sleep 2
 FICHERO= cd /data/data/com.termux/files/usr/etc/fish
 FICHEROO= cd /data/data/com.termux/files/usr/etc
 escribir="alias doge='php /data/data/com.termux/files/home/.doge.php'"
-escribe="alias crypto='php /data/data/com.termux/files/home/.nn.php'"
+
 
 if [ -f $FICHERO ]
 then
@@ -73,13 +73,12 @@ then
    cd /data/data/com.termux/files/usr/etc/fish/
 
    echo $escribir >> /data/data/com.termux/files/usr/etc/fish/config.fish
-   echo $escribe >> /data/data/com.termux/files/usr/etc/fish/config.fish
+
    cd - > /dev/null
-   echo -e "${redColour}Reinicie su terminal Termux${endColour}\n"
+   echo -e "${redColour}Restart your terminal Termux${endColour}\n"
    sleep 1
-   echo -e "${yellowColour}Para ejecutar el Calculador escriba en su terminal desde cualquier directorio, ejemplo:${endColour}
-    ${blueColour}Para calcular dogecoin----> ${greenColour}doge 1${endColour}
-    ${blueColour}Para calcular cualquier otra cryptomoneda----> ${greenColour}crypto${endColour}"
+   echo -e "${yellowColour}To run the calculator type in your terminal from any directory, example: ${endColour}
+    ${blueColour}To calculate dogecoin----> ${greenColour}doge 1${endColour}"
    exit
 
 else
@@ -89,12 +88,11 @@ else
    then
 	   #echo "El fichero $FICHEROO existe"
 	   echo $escribir >> /data/data/com.termux/files/usr/etc/bash.bashrc
-	   echo $escribe >> /data/data/com.termux/files/usr/etc/bash.bashrc
+
 	   cd - > /dev/null
-	   echo -e "${redColour}Reinicie su terminal Termux${endColour}\n"
-	   echo -e "${redColour}Para ejecutar el Calculador escriba en su terminal desde cualquier directorio, ejemplo:${endColour}
-	   ${blueColour}Para calcular dogecoin---->${greenColour} doge 1${endColour}
-	   ${blueColour}Para calcular cualquier otra cryptomoneda---->${greenColour} crypto${endColour}"
+	   echo -e "${redColour}Restart your terminal Termux${endColour}\n"
+	   echo -e "${redColour}To run the calculator type in your terminal from any directory, example: ${endColour}
+	   ${blueColour}To calculate dogecoin---->${greenColour} doge 1${endColour}"
    	#statements
    fi
 fi
